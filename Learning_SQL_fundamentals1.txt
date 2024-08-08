@@ -1,0 +1,51 @@
+
+JOINS:
+
+Normally if we use the join it will end up in inner join
+
+to use join in the sql we must use alias  to avoid common column confusion from the both table
+
+If you have to include the other database to make join you have to mention that db with column
+
+self join is like joining the table within the table for eg employee id with manager id who is also an employee
+
+composite primary Key: contains primary more than one column as primary
+
+implicit join in where clause if we forget the where condition the implicit join may end up in cross join 
+
+Try to use one join for eg if you are using left try to maintain the right join in every table
+
+
+Natural join not recommended
+use same column of the both the table automatically
+
+Cross join every record in the customer table will be combined with every record in the product table 
+for eg colors of the garment with sizes of the garment of the garment db
+
+
+Union Operator
+When return the number of columns for the both the query must be equal otherwise it throws error
+
+
+varchar / char
+varchar only store the size of the values 
+char irrespective of the size of the value the maximum of the size
+
+
+while inserting the values in the table we can the use anyorder by mentioning the  respective column names and values  when we explcitly mention it in the argument
+
+LAST_INSERT_ID() : retrieves the last incremented value of the table
+
+COPY OF THE TABLE using subquery
+
+SAFE_UPDATE : in mysql preferences in the safe update avoid the multiple update of multiple row of single table
+
+
+update issue in the table
+Self-Referencing Subquery: When you write an UPDATE statement that includes a subquery referencing the same table, MySQL cannot guarantee the correctness of the operation. For example, in your original query:
+
+Difference between having and where clause
+having clause is applied after aggregration
+where clause before aggregration
+
+When doing groupby for a column you must include the column which you have selected with the group by in the select statement
