@@ -1,0 +1,2 @@
+SELECT CONCAT(first_name, "  " ,last_name) AS customer, ifnull(phone, "Unknown") AS PHONE  FROM customers
+	
