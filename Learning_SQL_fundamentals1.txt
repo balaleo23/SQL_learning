@@ -49,3 +49,28 @@ having clause is applied after aggregration
 where clause before aggregration
 
 When doing groupby for a column you must include the column which you have selected with the group by in the select statement
+
+
+Complex queries
+
+We can write subqueries in select statement  from clause and where clause
+
+When to use sub query when to use join is based on the readability
+
+ALL Keyword to compare the list of values returned from the subquery
+
+IN keyword is equivalent to ANY keyword
+
+CORRELATED Query is nothing but using the outer query values as filter  the sub query
+
+EXIST query is much faster in selecting the rows than IN operator
+
+Basically sub query can be used in  not only in where clause but also in select clause and from clause as well 
+
+
+Number add
+string : concat, trim
+Date = now we can give the specific timeformat for calcualtion
+
+IF Nullvalue will return the specific text if the value is null in the select statement
+
