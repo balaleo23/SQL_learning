@@ -74,3 +74,30 @@ Date = now we can give the specific timeformat for calcualtion
 
 IF Nullvalue will return the specific text if the value is null in the select statement
 
+View:
+SELECT Statement
+
+it can also be used in the below things
+
+INSERT , update and delete 
+under circumstances if doesnt have this keywords
+
+Distinct
+Aggregrate Functions 
+Group By / Having
+Union
+
+if the view doesnt have any of this keywords above its called updatable view
+
+with check option
+you can try to control the modifying of the view by restricting the updating and deleting option
+
+views can be used to avoid the changes directly in the table and helps to create the abstraction of the table and to avoid the table
+
+
+store procedures 
+input and output variable declaration
+
+Unlike the store procedure , the function can return only single value 
+where procedure can return multiple rows and values
+
