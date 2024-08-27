@@ -138,5 +138,94 @@ For eg customer and order table get executed in the reverse order and the first 
 
 To minimize the deadlocks
 short and small of the transaction to avoid the likelihood of the deadlock
-	
 
+
+
+Datatypes:
+
+Char
+Varchar - 65000
+Mediumtext -16MB (short medium length books)
+LongTEXt Max 4GB (textbooks and years of log books)
+
+-----------------------------------------------------------------
+Tinytext MAX : 255 bytes
+TEXT : MAX : 64MB it better to use varchar
+------------------------------------------------------------
+
+English 1bytes
+European language 2 bytes
+ASIAN - 3 bytes (Chinese and Japasnese)
+-------------------------------------------------------------
+
+INTEGER
+
+Unsigned - positive
+Why do we have to consider the bytes in the mysql is because it helps to improve the performance when handling huge db
+--------------------------------------------------------------------------------------------------------------------------
+
+
+DECIMAL
+DEC , NUM, FIXED all are same
+
+use precision at the highest accuracy
+
+
+--------------------------------------------------------------------------------------------------------------------------
+ 
+FLOAT  4b
+DOUBLE  8b
+
+
+use approximation instead of the actual number 
+
+--------------------------------------------------------------------------------------------------------------------------
+
+BOOLEAN
+Bool and Boolean Datatypes
+
+--------------------------------------------------------------------------------------------------------------------------
+ENUM
+
+Enum are the kind of the sets and array of selected options in the table
+
+The Main cons of the Enum is that we need to create the table from the beginning if there is any modification of the values mentioned in the table
+
+Mosh suggestion : try to include the lookup in the schemas example is the payment_method table for generating the drop downs or the list of the options 
+which can be used for the other table
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Date and time types:
+
+Date time: you can use the datetime for storing without any year caveat
+
+timestamp: can store upto 2038 thats the 2038 problems
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+BLOBS:
+
+images/videos/pdf
+
+it is advisable to avoid storing the blobs in the relational db as it causes severe performance prblems
+slower backup increase the db sizes  
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+JSON types
+
+to access the property [--> ] symbol or ['$.]' 
+JSON_SET to set the properties and update the older one
+JSON_REMOVE to remove the properties
+We can use the object properties to extract the key value pair
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
