@@ -116,7 +116,27 @@ When two transaction running in the same time, the other transaction is upheld u
 Most of the concurrency reads has been solved by repeatable reads
 
 Concurrency Problems
-1.Dirty Reads
-2. Non-Repeating Reads
-3.Phantom Reads
+1.Dirty Reads if we read uncommitted data
+2. Non-Repeating Reads - if you read the same transaction but different result  
+3.Phantom Reads - if we miss one or more rows in a query
+
+Moreover we make the isolation level to avoid the concurrency problems the more we gonna experience the scalability and performance issue
+
+Repeatable isolation is the default concurrency level in the most of the db which solves the concurrency problem to maintain the stability
+
+updation of the transaction of the one client will affect of the other transaction results in phantom error example (update of the location of state in the customer table)
+
+Serializable isolation only for phantom reads
+
+will wait the update of the other transaction to complete to reflect the other 
+
+
+
+Deadlocks
+When two transaction updates n the reverse orders
+For eg customer and order table get executed in the reverse order and the first transaction clashes with the second transaction then deadlock will likely to occur 
+
+To minimize the deadlocks
+short and small of the transaction to avoid the likelihood of the deadlock
+	
 
