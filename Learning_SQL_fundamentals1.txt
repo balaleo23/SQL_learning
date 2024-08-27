@@ -101,3 +101,22 @@ input and output variable declaration
 Unlike the store procedure , the function can return only single value 
 where procedure can return multiple rows and values
 
+Triggers can also initiated for table level ones i.e it get triggerred only once for every row 
+
+
+EVENTS:
+A task that get executed according to the schedule
+
+
+To maintain the consistency (ACID) principles 
+
+Concurrency 
+When two transaction running in the same time, the other transaction is upheld until the first transaction is completed
+
+Most of the concurrency reads has been solved by repeatable reads
+
+Concurrency Problems
+1.Dirty Reads
+2. Non-Repeating Reads
+3.Phantom Reads
+
